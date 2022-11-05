@@ -34,6 +34,22 @@ export const Basic = () => {
   );
 };
 
+export const Size = () => {
+  return (
+    <>
+      <Button size="small" type="primary">
+        small
+      </Button>
+      <Button type="primary" style={{ marginLeft: "12px" }}>
+        medium
+      </Button>
+      <Button size="large" type="primary" style={{ marginLeft: "12px" }}>
+        large
+      </Button>
+    </>
+  );
+};
+
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
