@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Button from "./button";
+import Icon from "./icon";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,10 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Button>default</Button>
-    <Button type="primary">primary</Button>
-    <Button type="dashed">dashed</Button>
-    <Button type="link">link</Button>
-    <Button type="text">text</Button>
+    <Icon />
   </React.StrictMode>
 );
 
