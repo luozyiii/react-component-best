@@ -11,7 +11,6 @@ root.render(
   <React.StrictMode>
     <Button>default</Button>
     <Button type="primary">primary</Button>
-    <Button type="ghost">ghost</Button>
     <Button type="dashed">dashed</Button>
     <Button type="link">link</Button>
     <Button type="text">text</Button>

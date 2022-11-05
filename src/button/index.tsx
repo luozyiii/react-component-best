@@ -6,10 +6,11 @@ import "./index.css";
 interface ButtonProps {
   className?: string;
   children?: React.ReactNode;
-  type?: "primary" | "ghost" | "dashed" | "link" | "text";
+  type?: "primary" | "dashed" | "link" | "text";
+  style?: React.CSSProperties;
 }
 const Button = (props: ButtonProps) => {
-  const { className, children, type } = props;
+  const { className, children, type, style } = props;
 
   const cls = classnames({
     "ant-btn": true,
@@ -17,7 +18,11 @@ const Button = (props: ButtonProps) => {
     [className as string]: !!className,
   });
 
-  return <button className={cls}>{children}</button>;
+  return (
+    <button className={cls} style={style}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
