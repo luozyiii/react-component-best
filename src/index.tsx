@@ -1,17 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+
 import Button from "./button";
 import Icon from "./icon";
+import Tag from "./tag";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Button>default</Button>
-    <Icon />
+    <Button size="small">default</Button>
+    <Icon size={24} />
+    <Tag closable>tag 1</Tag>
   </React.StrictMode>
 );
 
