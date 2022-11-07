@@ -44,3 +44,15 @@ findBy / findAllBy / findByText、findByRole...
 - 事件触发（fireEvent）
 
 ### Jest
+
+## 工程四件套
+
+Node.js: path global fs-extra chalk
+
+- step 1: 新建目录。认识 process
+- step 2: 读取模版 handlebars 模版
+- step 3: 写文件
+
+```bash
+node scripts/add.js comp-test
+```

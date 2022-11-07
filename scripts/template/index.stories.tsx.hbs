@@ -1,0 +1,25 @@
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+
+import {{componentName}} from "./index";
+
+export default {
+  title: "Component/{{componentName}}",
+  component: {{componentName}},
+} as ComponentMeta<typeof {{componentName}}>;
+
+const Template: ComponentStory<typeof {{componentName}}> = (args) => <{{componentName}} {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  children: "{{componentName}}",
+};
+
+// 基础用法
+export const Basic = () => {
+  return (
+    <>
+      <{{componentName}}>default</{{componentName}}>
+    </>
+  );
+};
